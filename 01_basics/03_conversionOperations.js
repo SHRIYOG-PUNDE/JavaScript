@@ -26,3 +26,13 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(typeof stringNumber);
 
+// ======== OPERATIONS ======== 
+console.log(2**3); // power operations 
+let str1 = "Shriyog"
+let str2 = " Punde"
+console.log(str1+str2);
+
+console.log("1" + 2 + 5);
+console.log(2 + 5 + "1");
+
+ 
