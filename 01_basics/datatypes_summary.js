@@ -26,3 +26,23 @@ const myFunction  = function()
 {
     console.log("Hello world")
 }
+
+//  STACK (PRIMITIVE), HEAP (NON PRIMITIVE)
+ let myCollegename = "Shriyog"
+ let myHomeName = myCollegename
+
+ myHomeName = "Vedant"
+ console.log(myCollegename);
+ console.log(myHomeName);
+
+ let MyEmployee1 = 
+ {
+    name : "Shriyog",
+    email : "Shriyog@google.com"
+ }
+let MyEmployee2 = MyEmployee1
+MyEmployee2.email = "shriyog@meta.com"
+console.log(MyEmployee1.email);
+console.log(MyEmployee2.email);
+
+ 
