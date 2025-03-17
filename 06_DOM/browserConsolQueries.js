@@ -15,9 +15,23 @@ title.innerHTML  // this will give content of tag if u write more html inside it
 
 document.getElementsByClassName("lemons")
 document.querySelector("h2")
-document.querySelectorAll("h2")
+document.querySelectorAll("h2")    // this returns node list of elements insteda of array
 document.querySelector("#basson1")
 document.querySelector(".gendafullo")
 
 const turnGreen = ulvar.querySelector("li")
 turnGreen.style.backgroundColor = "green"
+
+const myH1 = querySelectorAll("h1")
+myH1[0].style.backgroundColor = "green"  
+
+const liItems = document.querySelectorAll("li")
+liItems.forEach(function (liitem) {
+    liitem.style.color = "red"
+})
+
+tempClassList = document.getElementsByClassName("list-items")
+const newXonv = Array.from(tempClassList)
+newXonv.forEach(function (li) {
+    li.style.backgroundColor = "green"
+})
