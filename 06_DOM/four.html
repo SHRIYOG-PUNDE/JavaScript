@@ -24,5 +24,22 @@
         document.querySelector(".language").appendChild(li) // more optimized
     }
     altAddLang("lambda")
+
+    // EDIT
+    const secondWrd = document.querySelector("li:nth-child(2)")
+    secondWrd.innerHTML = "jinny madarchod"
+
+    const newli = document.createElement("li")
+    newli.textContent = "Lemons"
+    secondWrd.replaceWith(newli)
+
+    // edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>TypeScript</li>"
+
+    // remove
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+
 </script>
 </html>
